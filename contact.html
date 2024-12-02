@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leon Forsythe">
+    <meta
+      name="description"
+      content="contact page for the Swiss resort 'Arctic Kingdom'">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- favicon image credit to freepik.com -->
+
+    <title>Arctic Kingdom | Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">Arctic Kingdom</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Accommodations</a></li>
+          <li><a class="active" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contact-main">
+      <section>
+        <h2>Contact Us</h2>
+        <p>
+          Please reach out to us with any questions or concerns. We are happy to
+          help you plan your dream vacation with us! Required fields marked with
+          a <span class="required">*</span>
+        </p>
+        <img alt="image of Swiss peaks" src="images/swiss-peak.jpg">
+      </section>
+      <form
+        method="POST"
+        action="https://wp.zybooks.com/form-viewer.php"
+        target="_blank"
+      >
+        <label for="full-name">Full Name<span class="required">*</span></label>
+        <input type="text" required id="full-name" name="full-name">
+        <label for="email">Email<span class="required">*</span></label>
+        <input type="email" required id="email" name="email">
+        <label for="phone">Phone Number<span class="required">*</span></label>
+        <input type="number" required id="phone" name="phone">
+        <fieldset>
+          <legend>Preferred Method of Contact</legend>
+          <input type="radio" name="contact-pref" id="pref-email" checked>
+          <label for="pref-email">Email</label>
+          <input type="radio" name="contact-pref" id="pref-phone">
+          <label for="pref-phone">Phone</label>
+        </fieldset>
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments"></textarea>
+        <input
+          type="submit"
+          name="submit-btn"
+          id="submit-btn"
+          value="Submit Form">
+      </form>
+    </main>
+    <footer>
+      <p>Copyright &copy; - Arctic Kingdom</p>
+      <p>This site is for educational purposes only</p>
+    </footer>
+  </body>
+</html>
